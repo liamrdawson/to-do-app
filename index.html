@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!--
+  TO DO LIST APP CHALLENGE.
+  Your objective here is to use the skills you're learned so far to buil a simple to-do list app.
+  Use Bootstrap to style the application.
+  The app must be able to:
+    - add list items
+    - remove list items
+    - move items up and down the list
+    - move completed tasks to a seppareta section called "completed tasks"
+-->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Liam's To-Do List</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  </head>
+
+  <body>
+<!--      HEADER -->
+    <header class="jumbotron bg-dark text-light" style="border-radius: 0;">
+      <h1>Liam's To-Do List</h1>
+    </header>
+    <main class="row justify-content-center">
+
+<!--      TO-DO LIST TITLE -->
+      <div if='toDo' class="col-lg-6 col-sm-9 col-11 justify-content-center mt-5">
+        <div class="card-header bg-success text-light">
+          <h4>To-Do:</h4>
+        </div>
+<!-- THE TO DO LIST -->
+        <ul id='toDoListUl' class="toDo list-group">
+
+        </ul>
+        <div id="inputArea" class="input-group mb-3">
+          <div class="input-group-prepend">
+            <button id="addItemButton" class="btn btn-success" type="button">ADD</button>
+          </div>
+          <input type="text" class="addItemInput form-control" placeholder="your next item here." aria-label="" aria-describedby="basic-addon1">
+        </div>
+      </div>
+      <div class="w-100 ">
+
+<!--    COMPLETED ITEMS LIST -->
+      </div>
+      <div class="Completed col-lg-6 col-sm-9 col-11 justify-content-center mt-5">
+        <div class="card-header text-secondary">
+          <h4>Completed:</h4>
+        </div>
+        <ul class="doneUl list-group text-secondary">
+
+        </ul>
+      </div>
+
+    </main>
+
+<!--  BOOTSTRAP JAVASCRIPT -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+  </body>
+  <script src="js/script.js" charset="utf-8"></script>
+</html>
