@@ -7,11 +7,6 @@ const addItemInput = document.querySelector('input.addItemInput');
 //  COMPLETED ITEMS LIST
 const doneUl = document.querySelector('ul.doneUl');
 
-/*
-document.addEventListener( 'click', (event) => {
-  console.log(event.target);
-});*/
-
 
 toDoListUl.addEventListener('click', (event)=>{
   if (event.target.tagName == 'BUTTON') {
